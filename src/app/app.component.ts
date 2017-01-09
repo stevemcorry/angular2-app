@@ -7,5 +7,6 @@ import { CollectionComponent } from './collection/collection.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Stephen Corry';
+  otherTitle = 'something else'
 }

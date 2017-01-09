@@ -5,7 +5,7 @@ import { ApartmentsService } from '../shared/apartments.service';
 @Component({
   selector: 'app-collection',
   templateUrl: './collection.component.html',
-  styles: []
+  styleUrls: ['./collection.component.css']
 })
 export class CollectionComponent implements OnInit {
 
