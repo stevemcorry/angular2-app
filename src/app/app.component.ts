@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CollectionComponent } from './collection/collection.component';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,6 @@ import { CollectionComponent } from './collection/collection.component';
 })
 export class AppComponent {
   title = 'Stephen Corry';
-  otherTitle = 'something else'
+  otherTitle = 'something else';
+  visibleClass: false;
 }
