@@ -1,0 +1,7 @@
+img {
+    transform: rotate(90deg);
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+}

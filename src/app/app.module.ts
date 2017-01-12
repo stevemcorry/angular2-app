@@ -2,22 +2,50 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { MarketComponent } from './market/market.component';
-import { CollectionComponent } from './collection/collection.component';
-import { ApartmentsService } from './shared/apartments.service'
+import { AboutComponent } from './about/about.component';
+import { HeaderComponent } from './header/header.component';
+import { ApartmentsService } from './shared/apartments.service';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SkillsComponent } from './skills/skills.component';
+import { BudjetzComponent } from './budjetz/budjetz.component';
+import { CrowdControlComponent } from './crowd-control/crowd-control.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MarketComponent,
-    CollectionComponent
+    AboutComponent,
+    HeaderComponent,
+    PortfolioComponent,
+    SkillsComponent,
+    BudjetzComponent,
+    CrowdControlComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot([
+      {
+        path: 'contact',
+        component: HeaderComponent
+      },
+      {
+        path: 'portfolio',
+        component: PortfolioComponent
+      },
+      {
+        path: 'about',
+        component: AboutComponent
+      },
+      {
+        path: 'skills',
+        component: SkillsComponent
+      }
+    ])
   ],
   providers: [ApartmentsService],
   bootstrap: [AppComponent]
