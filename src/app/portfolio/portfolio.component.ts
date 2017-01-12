@@ -10,6 +10,7 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+   const visibleClass = true;
   }
 
 }

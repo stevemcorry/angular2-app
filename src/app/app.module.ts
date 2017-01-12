@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { ApartmentsService } from './shared/apartments.service';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
+import { BudjetzComponent } from './budjetz/budjetz.component';
+import { CrowdControlComponent } from './crowd-control/crowd-control.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { SkillsComponent } from './skills/skills.component';
     AboutComponent,
     HeaderComponent,
     PortfolioComponent,
-    SkillsComponent
+    SkillsComponent,
+    BudjetzComponent,
+    CrowdControlComponent
   ],
   imports: [
     BrowserModule,
