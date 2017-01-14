@@ -1,7 +1,15 @@
 img {
-    transform: rotate(90deg);
     margin: 25px;
     height: 250px;
     width: 250px;
     border-radius: 125px;
+    object-fit: cover;
+}
+.main {
+    height: 100vh;
+    display: table;
+}
+.aboutWraper {
+    display: table-cell;
+    vertical-align: middle;
 }

@@ -2,8 +2,5 @@ main {
     height: 100vh;
 }
 div {
-    height: 250px;
-    width: 250px;
-    border-radius: 200px;
     background: #bae0ff;
 }
