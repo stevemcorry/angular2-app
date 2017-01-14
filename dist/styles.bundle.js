@@ -6,10 +6,10 @@ webpackJsonp([1,2],{
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(636);
+var content = __webpack_require__(637);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(670)(content, {});
+var update = __webpack_require__(673)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -27,22 +27,22 @@ if(false) {
 
 /***/ },
 
-/***/ 636:
+/***/ 637:
 /***/ function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(637)();
+exports = module.exports = __webpack_require__(638)();
 // imports
 
 
 // module
-exports.push([module.i, "body {\n    text-align: center;\n    background: -webkit-linear-gradient(#2BC0E4 , #EAECC6, #85D8CE, #085078 ,#1D976C, #003973 , #E5E5BE , #93F9B9, #4CB8C4 , #E55D87 , #DD2476,#FF512F);\n    background: linear-gradient(#2BC0E4 , #EAECC6, #85D8CE, #085078 ,#1D976C, #003973 , #E5E5BE , #93F9B9, #4CB8C4 , #E55D87 , #DD2476,#FF512F);\n    height: 100vh;\n    background-size: 900%;\n    background-position: 0 18%;\n    -webkit-transition: background 3s ease;\n    transition: background 3s ease;\n}", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
 
 /***/ },
 
-/***/ 637:
+/***/ 638:
 /***/ function(module, exports) {
 
 /*
@@ -99,7 +99,7 @@ module.exports = function() {
 
 /***/ },
 
-/***/ 670:
+/***/ 673:
 /***/ function(module, exports) {
 
 /*
@@ -352,7 +352,7 @@ function updateLink(linkElement, obj) {
 
 /***/ },
 
-/***/ 673:
+/***/ 676:
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(368);
@@ -360,5 +360,5 @@ module.exports = __webpack_require__(368);
 
 /***/ }
 
-},[673]);
+},[676]);
 //# sourceMappingURL=styles.bundle.map
