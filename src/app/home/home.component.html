@@ -1,0 +1,25 @@
+<div class="main" [ngClass]="{'footer': visibleClass}">
+  <div class="homeWrap">
+    <div class="content">
+      <div class="mainLinks top">
+        <div class="left" routerLink="/portfolio" (click)='visibleClass = true'>
+          Projects
+        </div>
+        <div class="right" routerLink="/about">
+          About
+        </div>
+      </div>
+      <div class="profile">    
+        <div class="profileName">Stephen's Profile</div>
+      </div>
+      <div class="mainLinks bottom">
+        <div class="left" routerLink="/skills">
+          Skills
+        </div>
+        <div class="right" routerLink="/contact">
+          Contact
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

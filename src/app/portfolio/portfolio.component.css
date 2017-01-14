@@ -1,4 +1,23 @@
+.main {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+div {
+    display: inline-block;
+}
 img {
-    height: 10%;
-    width: 10%;
+    height: auto;
+    width: 30%;
+}
+.imgDisplay {
+    height: auto;
+    width: 300px;
+    display: inline-block;
+    margin: 5vh;
+}
+.crowdCtrl {
+    width: 100%;
 }

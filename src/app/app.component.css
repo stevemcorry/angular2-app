@@ -1,46 +1,8 @@
-main {
-    position: absolute;
-    margin: 20px;
-    width: 95vw;
-    top: 5%;
-    height: 85vh;
-}
-.footer {
-    display: none;
-}
-.profile {
-    height: 250px;
-    width: 250px;
-    border-radius: 200px;
-    background: #bae0ff;
-    position: relative;
-}
-.profileName {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    margin: -5% 0 0 -25%;
-}
-.mainLinks {
-    font: 25px comic-sans;
-}
-div {
-    margin: auto;
-}
-.left {
-    float: left;
-    margin-left: 30px;
-}
-.right {
-    float: right;
-    margin-right: 30px;
-}
-.top {
-    padding-bottom: 50px;
-    margin-top: 25px;
-}
-.bottom {
-    padding-top: 50px;
-    margin-bottom: 25px;
+body {
+    text-align: center;
+    background: linear-gradient(#2BC0E4 , #EAECC6, #85D8CE, #085078 ,#1D976C, #003973 , #E5E5BE , #93F9B9, #4CB8C4 , #E55D87 , #DD2476,#FF512F);
+    height: auto;
+    background-size: 900%;
+    background-position: 0 18%;
+    transition: background 3s ease;
 }

@@ -1,0 +1,56 @@
+.main {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+    height: 100vh;
+}
+.homeWrap {
+    display: inline-block;
+    width: 95%;
+    height: 100%;
+}
+.footer {
+    display: none;
+}
+.profile {
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    background: #bae0ff;
+    position: relative;
+}
+.profileName {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    margin: -5% 0 0 -25%;
+}
+.mainLinks {
+    font: 25px comic-sans;
+}
+div {
+    margin: auto;
+}
+.left {
+    text-align: left;
+    float: left;
+    margin-left: 10%;
+    width: fit-content;
+    height: 45%;
+}
+.right {
+    text-align: right;
+    float: right;
+    margin-right: 10%;
+    width: fit-content;
+    height: 45%;
+}
+.top {
+    padding-bottom: 10%;
+    margin-top: 25px;
+}
+.bottom {
+    padding-top: 10%;
+    margin-bottom: 25px;
+}
