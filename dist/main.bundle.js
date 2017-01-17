@@ -57471,6 +57471,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var HomeComponent = (function () {
     function HomeComponent() {
     }
+    HomeComponent.prototype.scrollAbout = function () {
+        document.querySelector('.aboutWraper').scrollIntoView({ behavior: 'smooth' });
+    };
+    HomeComponent.prototype.scrollProjects = function () {
+        document.querySelector('.projectsWraper').scrollIntoView({ behavior: 'smooth' });
+    };
+    HomeComponent.prototype.scrollSkills = function () {
+        document.querySelector('.skillsWraper').scrollIntoView({ behavior: 'smooth' });
+    };
+    HomeComponent.prototype.scrollContact = function () {
+        document.querySelector('.contactWraper').scrollIntoView({ behavior: 'smooth' });
+    };
     HomeComponent.prototype.ngOnInit = function () {
     };
     HomeComponent = __decorate([
@@ -60700,7 +60712,7 @@ module.exports = "img {\r\n    margin: 25px;\r\n    height: 250px;\r\n    width:
 /* 641 */
 /***/ function(module, exports) {
 
-module.exports = "body {\r\n    text-align: center;\r\n    background: -webkit-linear-gradient(#2BC0E4 , #EAECC6, #85D8CE, #085078 ,#1D976C, #003973 , #E5E5BE , #93F9B9, #4CB8C4 , #E55D87 , #DD2476,#FF512F);\r\n    background: linear-gradient(#2BC0E4 , #EAECC6, #85D8CE, #085078 ,#1D976C, #003973 , #E5E5BE , #93F9B9, #4CB8C4 , #E55D87 , #DD2476,#FF512F);\r\n    height: auto;\r\n    background-size: 900%;\r\n    background-position: 0 18%;\r\n    -webkit-transition: background 3s ease;\r\n    transition: background 3s ease;\r\n}"
+module.exports = "body {\r\n    text-align: center;\r\n    background: -webkit-linear-gradient(black, white, black, white, black,white);\r\n    background: linear-gradient(black, white, black, white, black,white);\r\n    height: auto;\r\n    background-size: 200%;\r\n    background-position: 0 18%;\r\n    -webkit-transition: background 3s ease;\r\n    transition: background 3s ease;\r\n}\r\n.about {\r\n    color: red;\r\n}"
 
 /***/ },
 /* 642 */
@@ -60730,13 +60742,13 @@ module.exports = ".main {\r\n    display: table-cell;\r\n    vertical-align: mid
 /* 646 */
 /***/ function(module, exports) {
 
-module.exports = ".main {\r\n    text-align: center;\r\n    width: 100%;\r\n    margin: auto;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n}\r\ndiv {\r\n    display: inline-block;\r\n}\r\nimg {\r\n    height: auto;\r\n    width: 30%;\r\n}\r\n.imgDisplay {\r\n    height: auto;\r\n    width: 300px;\r\n    display: inline-block;\r\n    margin: 5vh;\r\n}\r\n.crowdCtrl {\r\n    width: 100%;\r\n}"
+module.exports = ".main {\r\n    text-align: center;\r\n    width: 100%;\r\n    margin: auto;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    height: 100vh;\r\n}\r\ndiv {\r\n    display: inline-block;\r\n}\r\nimg {\r\n    height: auto;\r\n    width: 30%;\r\n}\r\n.imgDisplay {\r\n    height: auto;\r\n    width: 300px;\r\n    display: inline-block;\r\n    margin: 5vh;\r\n    -webkit-transition: all 2s ease;\r\n    transition: all 2s ease;\r\n}\r\n.crowdCtrl {\r\n    width: 100%;\r\n}\r\n.imgDisplay:hover {\r\n    width: 500px;\r\n}"
 
 /***/ },
 /* 647 */
 /***/ function(module, exports) {
 
-module.exports = ".skillsWrap {\r\n    margin: 25px;\r\n    margin-top: 50px;\r\n}\r\n.skills {\r\n    margin: 10px;\r\n}"
+module.exports = ".skillsWraper {\r\n    margin: 25px;\r\n    margin-top: 50px;\r\n    height: 100vh;\r\n}\r\n.skills {\r\n    margin: 10px;\r\n}"
 
 /***/ },
 /* 648 */
@@ -60766,25 +60778,25 @@ module.exports = "<p>\n  crowd-control works!\n</p>\n"
 /* 652 */
 /***/ function(module, exports) {
 
-module.exports = "<main>\n  <div>    \n    Email: stevemcorry@gmail.com\n  </div>\n  <div>    \n    GitHub: https://github.com/stevemcorry\n  </div>\n  <div>    \n    LinkedIn: https://www.linkedin.com/in/stephen-corry\n  </div>\n</main>"
+module.exports = "<main class=\"contactWraper\">\n  <div>    \n    Email: stevemcorry@gmail.com\n  </div>\n  <div>    \n    GitHub: https://github.com/stevemcorry\n  </div>\n  <div>    \n    LinkedIn: https://www.linkedin.com/in/stephen-corry\n  </div>\n</main>"
 
 /***/ },
 /* 653 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"main\">\n  <div class=\"homeWrap\">\n    <div class=\"content\">\n      <div class=\"mainLinks top\">\n        <div class=\"left\">\n          Projects\n        </div>\n        <div class=\"right\">\n          About\n        </div>\n      </div>\n      <div class=\"profile\">    \n        <div class=\"profileName\">Stephen's Profile</div>\n      </div>\n      <div class=\"mainLinks bottom\">\n        <div class=\"left\">\n          Skills\n        </div>\n        <div class=\"right\">\n          Contact\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"main\">\n  <div class=\"homeWrap\">\n    <div class=\"content\">\n      <div class=\"mainLinks top\">\n        <div class=\"left\" (click)=\"scrollProjects()\">\n          Projects\n        </div>\n        <div class=\"right\" (click)=\"scrollAbout()\">\n          About\n        </div>\n      </div>\n      <div class=\"profile\" >    \n        <div class=\"profileName\">Stephen's Profile</div>\n      </div>\n      <div class=\"mainLinks bottom\">\n        <div class=\"left\" (click)=\"scrollSkills()\">\n          Skills\n        </div>\n        <div class=\"right\" (click)=\"scrollContact()\">\n          Contact\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ },
 /* 654 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"main\">\n  <div class=\"imgDisplay\">\n    <img src=\"../../img/ScreenshotLogin.png\" alt=\"\">\n    <img src=\"../../img/ScreenshotAdd.png\" alt=\"\">\n    <img src=\"../../img/ScreenshotHome.png\" alt=\"\">\n    <a href=\"\">budjetz.com</a>\n  </div>\n  <div class=\"imgDisplay\">\n    <img class=\"crowdCtrl\" src=\"../../img/ScreenshotCrowd.png\" alt=\"\"> \n    <a href=\"contractcrowdcontrol.com\">contractcrowdcontrol.com\n    </a>\n  </div>\n</div>\n"
+module.exports = "<div class=\"main projectsWraper\" id=\"profile\">\n  <div class=\"imgDisplay\">\n    <img src=\"../../img/ScreenshotLogin.png\" alt=\"\">\n    <img src=\"../../img/ScreenshotAdd.png\" alt=\"\">\n    <img src=\"../../img/ScreenshotHome.png\" alt=\"\">\n    <a href=\"\">budjetz.com</a>\n  </div>\n  <div class=\"imgDisplay\">\n    <img class=\"crowdCtrl\" src=\"../../img/ScreenshotCrowd.png\" alt=\"\"> \n    <a href=\"contractcrowdcontrol.com\">contractcrowdcontrol.com\n    </a>\n  </div>\n</div>\n"
 
 /***/ },
 /* 655 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"skillsWrap\">\n  <h1>\n    Skills\n  </h1>\n    <div class=\"skills\" *ngFor=\"let skill of skills\">\n      {{skill}}\n    </div>\n</div>\n"
+module.exports = "<div class=\"skillsWraper\">\n  <h1>\n    Skills\n  </h1>\n    <div class=\"skills\" *ngFor=\"let skill of skills\">\n      {{skill}}\n    </div>\n</div>\n"
 
 /***/ },
 /* 656 */
