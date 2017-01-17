@@ -9,5 +9,4 @@ import { HeaderComponent } from './header/header.component';
 export class AppComponent {
   title = 'Stephen Corry';
   otherTitle = 'something else';
-  visibleClass: false;
 }

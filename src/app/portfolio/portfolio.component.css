@@ -4,6 +4,7 @@
     margin: auto;
     display: table-cell;
     vertical-align: middle;
+    height: 100vh;
 }
 div {
     display: inline-block;
@@ -17,7 +18,11 @@ img {
     width: 300px;
     display: inline-block;
     margin: 5vh;
+    transition: all 2s ease;
 }
 .crowdCtrl {
     width: 100%;
+}
+.imgDisplay:hover {
+    width: 500px;
 }

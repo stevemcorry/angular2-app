@@ -1,8 +1,11 @@
 body {
     text-align: center;
-    background: linear-gradient(#2BC0E4 , #EAECC6, #85D8CE, #085078 ,#1D976C, #003973 , #E5E5BE , #93F9B9, #4CB8C4 , #E55D87 , #DD2476,#FF512F);
+    background: linear-gradient(black, white, black, white, black,white);
     height: auto;
-    background-size: 900%;
+    background-size: 200%;
     background-position: 0 18%;
     transition: background 3s ease;
+}
+.about {
+    color: red;
 }
